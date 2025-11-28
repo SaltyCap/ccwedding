@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(/Users/christian/Desktop/code_projects/wedding/update_duckdns.sh:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:ccwedding.duckdns.org)",
+      "Bash(lsof:*)",
+      "Bash(dig:*)",
+      "Bash(host:*)",
+      "WebFetch(domain:72.204.47.16)",
+      "Bash(/usr/libexec/ApplicationFirewall/socketfilterfw:*)",
+      "Bash(kill:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

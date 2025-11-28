@@ -1,0 +1,22 @@
+# Logs
+*.log
+/tmp/
+
+# Environment variables and secrets
+.env
+update_duckdns.sh
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*.swo
+*~

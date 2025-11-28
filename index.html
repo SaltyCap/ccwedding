@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian & Chloe's Wedding Seating</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <main class="container">
+        <header>
+            <div class="monogram">C & C</div>
+            <h1>Find Your Seat</h1>
+            <p class="subtitle">We are so happy you are here to celebrate with us.</p>
+        </header>
+
+        <section class="search-section">
+            <div class="input-wrapper">
+                <input type="text" id="guest-search" placeholder="Type your name..." autocomplete="off">
+                <i class="fas fa-search search-icon"></i>
+                <button id="clear-search" class="clear-btn" style="display: none;">&times;</button>
+            </div>
+            <button id="view-all-btn" class="view-all-btn">View All Guests</button>
+        </section>
+
+        <section id="results-area" class="results-area">
+            <!-- Results will appear here -->
+            <div class="placeholder-message">Type your name above to find your table.</div>
+        </section>
+
+        <section class="map-section">
+            <h2>Seating Map</h2>
+            <div class="map-container">
+                <svg viewBox="0 0 800 500" class="seating-map" id="seating-map">
+                    <!-- Floor -->
+                    <rect x="0" y="0" width="800" height="500" fill="#f4f1ea" rx="10" />
+
+                    <!-- Labels -->
+                    <text x="40" y="250" class="map-label" transform="rotate(-90 40,250)"
+                        text-anchor="middle">BAR</text>
+                    <text x="760" y="250" class="map-label" transform="rotate(90 760,250)"
+                        text-anchor="middle">ENTRANCE</text>
+
+                    <!-- Top Left Group (2x2 minus one) -->
+                    <g id="table-12" class="table-group" data-table="12">
+                        <circle cx="120" cy="80" r="35" class="table-shape" />
+                        <text x="120" y="80" class="table-text">12</text>
+                    </g>
+                    <g id="table-13" class="table-group" data-table="13">
+                        <circle cx="220" cy="80" r="35" class="table-shape" />
+                        <text x="220" y="80" class="table-text">13</text>
+                    </g>
+                    <g id="table-11" class="table-group" data-table="11">
+                        <circle cx="120" cy="180" r="35" class="table-shape" />
+                        <text x="120" y="180" class="table-text">11</text>
+                    </g>
+
+                    <!-- Top Right Group (2x2) -->
+                    <g id="table-7" class="table-group" data-table="7">
+                        <circle cx="580" cy="80" r="35" class="table-shape" />
+                        <text x="580" y="80" class="table-text">7</text>
+                    </g>
+                    <g id="table-6" class="table-group" data-table="6">
+                        <circle cx="680" cy="80" r="35" class="table-shape" />
+                        <text x="680" y="80" class="table-text">6</text>
+                    </g>
+                    <g id="table-5" class="table-group" data-table="5">
+                        <circle cx="580" cy="180" r="35" class="table-shape" />
+                        <text x="580" y="180" class="table-text">5</text>
+                    </g>
+                    <g id="table-4" class="table-group" data-table="4">
+                        <circle cx="680" cy="180" r="35" class="table-shape" />
+                        <text x="680" y="180" class="table-text">4</text>
+                    </g>
+
+                    <!-- Bottom Row (Curved/Line) -->
+                    <!-- Left of Head Table -->
+                    <g id="table-10" class="table-group" data-table="10">
+                        <circle cx="80" cy="400" r="35" class="table-shape" />
+                        <text x="80" y="400" class="table-text">10</text>
+                    </g>
+                    <g id="table-9" class="table-group" data-table="9">
+                        <circle cx="180" cy="380" r="35" class="table-shape" />
+                        <text x="180" y="380" class="table-text">9</text>
+                    </g>
+                    <g id="table-8" class="table-group" data-table="8">
+                        <circle cx="280" cy="400" r="35" class="table-shape" />
+                        <text x="280" y="400" class="table-text">8</text>
+                    </g>
+
+                    <!-- Head Table (Center) -->
+                    <g id="table-head" class="table-group">
+                        <ellipse cx="400" cy="420" rx="80" ry="40" class="table-shape head-table" />
+                        <text x="400" y="415" class="table-text">Head Table</text>
+                        <text x="400" y="435" class="table-subtext">Christian & Chloe</text>
+                    </g>
+
+                    <!-- Right of Head Table -->
+                    <g id="table-3" class="table-group" data-table="3">
+                        <circle cx="520" cy="400" r="35" class="table-shape" />
+                        <text x="520" y="400" class="table-text">3</text>
+                    </g>
+                    <g id="table-2" class="table-group" data-table="2">
+                        <circle cx="620" cy="380" r="35" class="table-shape" />
+                        <text x="620" y="380" class="table-text">2</text>
+                    </g>
+                    <g id="table-1" class="table-group" data-table="1">
+                        <circle cx="720" cy="400" r="35" class="table-shape" />
+                        <text x="720" y="400" class="table-text">1</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thank you for celebrating with us!</p>
+    </footer>
+
+    <script src="papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

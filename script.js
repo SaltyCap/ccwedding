@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearBtn.style.display = query.length > 0 ? 'block' : 'none';
 
         if (query.length < 2) {
-            resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
+            resultsArea.innerHTML = '';
             return;
         }
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.value = '';
         clearBtn.style.display = 'none';
         searchInput.focus();
-        resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
+        resultsArea.innerHTML = '';
 
         // Clear highlights
         document.querySelectorAll('.highlight-table').forEach(el => el.classList.remove('highlight-table'));

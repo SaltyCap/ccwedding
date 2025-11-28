@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show/hide clear button
         clearBtn.style.display = query.length > 0 ? 'block' : 'none';
 
-        if (query.length < 2) {
+        if (query.length < 1) {
             resultsArea.innerHTML = '';
             return;
         }

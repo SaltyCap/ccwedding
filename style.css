@@ -94,7 +94,7 @@ h1 {
 .search-section {
     width: 100%;
     max-width: 600px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: fadeInUp 1s ease-out 0.3s backwards;
 }
 

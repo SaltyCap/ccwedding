@@ -150,25 +150,14 @@ input[type="text"]:focus {
     color: var(--primary-color);
 }
 
-.view-all-btn {
-    display: block;
+.instruction-text {
+    text-align: center;
     margin: 1rem auto 0;
-    background: none;
-    border: 1px solid #e0e0e0;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
     font-family: var(--font-sans);
-    font-size: 0.9rem;
-    color: #777;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.view-all-btn:hover {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-    background: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    font-size: 0.85rem;
+    color: #999;
+    font-style: italic;
+    letter-spacing: 0.3px;
 }
 
 .results-area {

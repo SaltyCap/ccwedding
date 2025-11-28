@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('guest-search');
     const resultsArea = document.getElementById('results-area');
     const clearBtn = document.getElementById('clear-search');
-    const viewAllBtn = document.getElementById('view-all-btn');
     let guests = [];
-    let isViewAll = false;
 
     // Load and parse CSV
     Papa.parse('seating_chart.csv', {
@@ -37,9 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        isViewAll = false;
-        viewAllBtn.textContent = "View All Guests";
-
         const filteredGuests = guests.filter(guest => {
             const firstName = (guest['First Name'] || '').toLowerCase();
             const lastName = (guest['Last Name'] || '').toLowerCase();
@@ -64,26 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Clear highlights
         document.querySelectorAll('.highlight-table').forEach(el => el.classList.remove('highlight-table'));
-    });
-
-    // View All
-    viewAllBtn.addEventListener('click', () => {
-        if (isViewAll) {
-            // Reset
-            isViewAll = false;
-            viewAllBtn.textContent = "View All Guests";
-            searchInput.value = '';
-            clearBtn.style.display = 'none';
-            resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
-            document.querySelectorAll('.highlight-table').forEach(el => el.classList.remove('highlight-table'));
-        } else {
-            // Show all
-            isViewAll = true;
-            viewAllBtn.textContent = "Hide Guest List";
-            searchInput.value = '';
-            clearBtn.style.display = 'none';
-            displayResults(guests);
-        }
     });
 
     function displayResults(results) {

@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         complete: function (results) {
             // Filter out empty rows or rows without table numbers
             guests = results.data.filter(guest =>
-                guest['Guest Name'] &&
-                guest['Table Number']
+                guest['First Name'] &&
+                guest['Table Number'] &&
+                guest['First Name'].toLowerCase() !== 'not attending'
             );
             console.log("Loaded " + guests.length + " guests from seating chart");
         },
@@ -40,8 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
         viewAllBtn.textContent = "View All Guests";
 
         const filteredGuests = guests.filter(guest => {
-            if (!guest['Guest Name']) return false;
-            return guest['Guest Name'].toLowerCase().includes(query);
+            const firstName = (guest['First Name'] || '').toLowerCase();
+            const lastName = (guest['Last Name'] || '').toLowerCase();
+            const nickname = (guest['Nickname/Group Name'] || '').toLowerCase();
+            const fullName = `${firstName} ${lastName}`.toLowerCase();
+
+            return firstName.includes(query) ||
+                   lastName.includes(query) ||
+                   nickname.includes(query) ||
+                   fullName.includes(query);
         });
 
         displayResults(filteredGuests);
@@ -90,14 +98,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         results.forEach(guest => {
             const tableNum = guest['Table Number'];
-            const guestName = guest['Guest Name'];
+            const firstName = guest['First Name'] || '';
+            const lastName = guest['Last Name'] || '';
+
+            // Display full name only
+            const displayName = `${firstName} ${lastName}`.trim();
 
             const card = document.createElement('div');
             card.className = 'guest-card';
 
             card.innerHTML = `
                 <div class="guest-info">
-                    <div class="guest-name">${guestName}</div>
+                    <div class="guest-name">${displayName}</div>
                 </div>
                 <div class="table-assignment">
                     <span class="table-label">Table</span>
@@ -184,9 +196,13 @@ document.addEventListener('DOMContentLoaded', () => {
             modalGuestList.innerHTML = '<div class="modal-guest-item">No guests assigned</div>';
         } else {
             tableGuests.forEach(guest => {
+                const firstName = guest['First Name'] || '';
+                const lastName = guest['Last Name'] || '';
+                const displayName = `${firstName} ${lastName}`.trim();
+
                 const div = document.createElement('div');
                 div.className = 'modal-guest-item';
-                div.textContent = guest['Guest Name'];
+                div.textContent = displayName;
                 modalGuestList.appendChild(div);
             });
         }

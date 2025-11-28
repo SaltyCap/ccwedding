@@ -1,113 +1,102 @@
-Guest Name,Table Number
-Ben Rice,1
-Carson English,1
-Catherine Rice,1
-Cory English,1
-Kiersten English,1
-Mason English,1
-Molly Stamps,1
-Parker Stamps,1
-
-Audrey Daverio,2
-Chloe Horn,2
-Cole Eder,2
-Fred Harris,2
-Joseph Harris,2
-Katie Schulte,2
-Lucy Harris,2
-
-Beverly English,3
-Celeste Harris,3
-Christopher Harris,3
-Chuck Harris,3
-Jere English,3
-Mary Harris,3
-Mitzi Harris,3
-Watson Harris,3
-
-Diana Hernandez,4
-Diana's Guest,4
-Stephanie Adams,4
-Vanessa Moyo,4
-Zachary Ellis,4
-Zachary McCoy,4
-
-Ainsley Kaminicki,5
-Ainsley's Guest,5
-Craig Kaminicki,5
-Holly Pullan,5
-Laura Kaminicki,5
-Laura Pyle,5
-Matthew Pullan,5
-
-Allen Richardson,6
-Betsy Harris,6
-David Diaz,6
-David Harris,6
-Jeff Harris,6
-Kathy Harris,6
-Pam Richardson,6
-Scott Harris,6
-Scott Thomson,6
-
-Arianna Collins,7
-Cathy Ellis,7
-Claire Ellis,7
-Dominic Ellis,7
-Jeff Ellis,7
-Jerry Hauck,7
-Vicki Hauck,7
-
-Andrea Morton,8
-Cindy Dorsey,8
-Honey Morton,8
-Jake Nelson,8
-Jonmark Morton,8
-Mark Dorsey,8
-Petra Sustaita,8
-Ty Morton,8
-
-Anthony Martelloni,9
-Anthony Morton,9
-Braden,9
-Henry,9
-Jackie Morton,9
-Kellie Morton,9
-Linda Morton,9
-Oliver,9
-TJ Morton,9
-
-Dalton Pyle,10
-Kevin Pyle,10
-Kevin's Guest,10
-Laura's Guest,10
-Lindy Horton,10
-Livia Nelson,10
-Mike Horton,10
-
-Aaron Dorsey,11
-Adam Dorsey,11
-Gabe Keltner,11
-Jacob Dorsey,11
-Jason Adair,11
-Jewel Keltner,11
-Melissa Dorsey,11
-Reid Dorsey,11
-
-Dan Smith,12
-Demra Smith,12
-Johnny Collins,12
-Josh Van Vleet,12
-Michelle Burnett,12
-Pamela Van Vleet,12
-
-Amanda McClendon,13
-Dean Adams,13
-Ethan Adams,13
-Michael Harris,13
-Michael McClendon,13
-Michael Morton,13
-Radisyn McClendon,13
-Reese McClendon,13
-Regan McClendon,13
-Samantha Adams,13
+﻿First Name,Last Name,Table Number,Nickname/Group Name
+Molly,Stamps,1,Molly
+Parker,Stamps,1,Parker
+Mason,English,1,Mason
+Kiersten,English,1,Kiersten
+Cory,English,1,Cory
+Ben,Rice,1,Ben
+Catherine,Rice,1,Catherine
+Carson,English,1,Carson
+Chloe,Horn,2,Chloe
+Joseph,Harris,2,Joe
+Katie,Schulte,2,Katie
+Michael,Harris,2,Mike
+Lucy,Harris,2,Lucy
+Audrey,Daverio,2,Audrey
+Cole,Eder,2,Cole
+Chuck,Harris,3,Chuck
+Mitzi,Harris,3,Mitzi
+Beverly,English,3,Bev
+Jere,English,3,Jere
+Elizabeth ,Jarvis,3,Mimi
+Celeste,Harris,3,Celeste
+Christopher,Harris,3,Chris
+Watson,Harris,3,Watson
+Laura,Kaminicki,7,Laura
+Craig,Kaminicki,7,Craig
+Ainsley,Kaminicki,7,Ainsley
+Ainsley's,Guest,7,Ainsley +1
+Matthew,Pullan,7,Matthew
+Holly,Pullan,7,Holly
+Mary,Harris,5,Gran
+Pam,Richardson,5,Pam
+Allen,Richardson,5,Allen
+Scott,Harris,5,Scott
+Betsy,Harris,5,Betsy
+Jeff,Harris,5,Jeff
+David,Harris,5,David
+Kathy,Harris,5,Kathy
+Jeff,Ellis,5,Jeff Ellis
+Cathy,Ellis,5,Cathy
+Arianna,Collins,6,Arianna
+Claire,Ellis,6,Claire
+Dominic,Ellis,6,Dominic
+Jerry,Hauck,6,Jerry Hauck
+Vicki,Hauck,6,Vicki Hauck
+Zachary,McCoy,4,Zach
+Stephanie,Adams,4,Stephanie
+Diana,Hernandez,4,Diana
+Diana's,Guest,4,Diana +1
+Vanessa ,Mayo,4,Vanessa
+Ty,Morton,8,Ty
+Andrea,Morton,8,Andrea
+Jonmark,Morton,8,Jonmark
+Petra,Sustaita,8,Petra
+Honey,Morton,8,Honey
+Jake,Nelson,8,Jake
+Mark,Dorsey,8,Mark
+Cindy,Dorsey,8,Cindy
+Jackie,Morton,10,Jackie
+Linda,Morton,10,Linda
+Anthony,Morton,10,Anthony
+TJ,Morton,10,TJ
+Michael,Morton,10,Michael
+Kellie,Morton,10,Kellie
+Braden,Morton,10,Braden
+Henry,Morton,10,Henry
+Oliver,Morton,10,Oliver (squeeze)
+Kevin,Pyle,9,Kevin Pyle
+Kevin's ,Guest,9,Kevin +1
+Laura,Pyle,9,Laura P
+Laura's,Guest,9,Laura +1
+Dalton,Pyle,9,Dalton
+Livia,Nelson,9,Livia
+Mike,Horton,11,Mike
+Lindy,Horton,11,Lindy
+Aaron,Dorsey,11,Aaron
+Reid,Dorsey,11,Reid
+Jason,Adair,11,Jason
+Johnny,Burnett,12,Johnny
+Michelle,Burnett,12,Michelle
+Dan,Smith,12,Dan
+Demra,Smith,12,Demra
+Josh,Van Vleet,12,Josh
+Pamela,Van Vleet,12,Pamela
+Amanda,McClendon,13,Amanda
+Michael,McClendon,13,Michael
+Reese,McClendon,13,Reese
+Radisyn,McClendon,13,Radisyn
+Regan,McClendon,13,Reagan
+Ethan,Adams,13,Ethan
+Samantha,Adams,13,Samantha
+Dean,Adams,13,Dean
+,,,
+,,,
+,,,
+,,,
+not attending,,,
+Adam,Dorsey,11,
+Melissa,Dorsey,11,
+Gabe,Keltner,11,
+Jewel,Keltner,11,
+Jacob,Dorsey,11,

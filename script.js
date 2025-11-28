@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         clearBtn.style.display = query.length > 0 ? 'block' : 'none';
 
         if (query.length < 2) {
-            resultsArea.innerHTML = '<div class="placeholder-message">Type your name above to find your table.</div>';
+            resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
             return;
         }
 
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchInput.value = '';
         clearBtn.style.display = 'none';
         searchInput.focus();
-        resultsArea.innerHTML = '<div class="placeholder-message">Type your name above to find your table.</div>';
+        resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
 
         // Clear highlights
         document.querySelectorAll('.highlight-table').forEach(el => el.classList.remove('highlight-table'));
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             viewAllBtn.textContent = "View All Guests";
             searchInput.value = '';
             clearBtn.style.display = 'none';
-            resultsArea.innerHTML = '<div class="placeholder-message">Type your name above to find your table.</div>';
+            resultsArea.innerHTML = '<div class="placeholder-message">Enter your first and last name above to find your table.</div>';
             document.querySelectorAll('.highlight-table').forEach(el => el.classList.remove('highlight-table'));
         } else {
             // Show all

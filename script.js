@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let guests = [];
 
     // Load and parse CSV
-    Papa.parse('seating_chart.csv', {
+    // Add cache buster to force reload
+    Papa.parse('seating_chart.csv?v=' + new Date().getTime(), {
         download: true,
         header: true,
         complete: function (results) {
@@ -42,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const fullName = `${firstName} ${lastName}`.toLowerCase();
 
             return firstName.includes(query) ||
-                   lastName.includes(query) ||
-                   nickname.includes(query) ||
-                   fullName.includes(query);
+                lastName.includes(query) ||
+                nickname.includes(query) ||
+                fullName.includes(query);
         });
 
         displayResults(filteredGuests);
